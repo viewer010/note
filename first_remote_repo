@@ -27,6 +27,11 @@ Branch master set up to track remote branch master from origin.
 ```
 $ git push origin master
 ```
+
+#pull file from origin
+```
+git pull origin  master
+```
 #problem
 when I first use the command, I met the problem
 ```
