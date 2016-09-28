@@ -52,7 +52,8 @@ git pull --rebase origin master
 ```
 
 and there is another porblem, I write this with grammer markdown,but when I pull this file to github,
-it did not deal this with a markdown file.why?
+it did not deal this with a markdown file.why? 
+because the file which end .md is treate as markdown
 ```
 #在本地的note仓库下运行命令
 本地关联远程库;远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库
