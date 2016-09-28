@@ -27,3 +27,21 @@ Branch master set up to track remote branch master from origin.
 ```
 $ git push origin master
 ```
+#problem
+when I first use the command, I met the problem
+```
+➜  note git:(master) git push -u origin master
+To github.com:viewer2015/note.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:viewer2015/note.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+出现错误的主要原因是github中的README.md文件不在本地代码目录中
+可以通过如下命令进行代码合并【注：`pull=fetch+merge`]
+```
+git pull --rebase origin master
+```
